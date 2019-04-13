@@ -1,23 +1,24 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import RuleLibrary from './RuleLibrary.js';
-import catergories from './data.js'
+import { categories, quizQuestions } from './data.js'
 import './App.css';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      catergories: catergories
+      categories: categories,
+      questions: quizQuestions
     }
   }
   
   render() {
-    console.log(this.state.catergories)
+    console.log(this.state.categories)
     return (
       <div className="App">
         <h1>memoize.eslint!</h1>
-        <RuleLibrary catergories={this.state.catergories}/>
+        <RuleLibrary categories={this.state.categories}/>
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class CatergoryDescription extends Component {
+export default class CategoryDescription extends Component {
     constructor(props) {
         super(props);
         

@@ -1,29 +1,29 @@
 import React, { Component } from 'react';
-import CatergoryDescription from './CatergoryDescription.js';
+import CategoryDescription from './CategoryDescription.js';
 
 export default class RuleLibrary extends Component {
     constructor(props) {
         super(props);
         this.state = {
             isDisplayed: false,
-            selectedCatergory: {},
-            currentCatergory: ''
+            selectedCategory: {},
+            currentCategory: ''
         }  
     }
 
     getCurrent = (e) => {
-        this.setState({currentCatergory: e.target.innerText}, () => {
+        this.setState({currentCategory: e.target.innerText}, () => {
             this.findSelected();
         });
         this.toggleDisplay();
     };
 
     findSelected = () => {
-        let newSelect = this.props.catergories.find( catergory => {
-            return catergory.name === this.state.currentCatergory
+        let newSelect = this.props.catergories.find( category => {
+            return category.name === this.state.currentCategory
         });
         console.log(newSelect)
-        this.setState({selectedCatergory: newSelect})
+        this.setState({selectedCategory: newSelect})
     };
 
     toggleDisplay = () => {
@@ -31,7 +31,7 @@ export default class RuleLibrary extends Component {
     };
     
   render() {
-      console.log(this.state.currentCatergory)
+      console.log(this.state.currentCategory)
     return (
       <div>
         <h2 onClick={this.getCurrent}>Indentation</h2>
@@ -39,7 +39,7 @@ export default class RuleLibrary extends Component {
         <h2 onClick={this.getCurrent}>No Unused Vars</h2>
         {
             this.state.isDisplayed ? 
-            (<CatergoryDescription selectedCat={this.state.selectedCatergory}/>)
+            (<CategoryDescription selectedCat={this.state.selectedCategory}/>)
              : (null)
         }
       </div>
