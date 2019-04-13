@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CategoryDescription from './CategoryDescription.js';
+import './RuleLibrary.css'
 
 export default class RuleLibrary extends Component {
     constructor(props) {
@@ -7,7 +8,8 @@ export default class RuleLibrary extends Component {
         this.state = {
             isDisplayed: false,
             selectedCategory: {},
-            currentCategory: ''
+            currentCategory: '',
+            definitionNames: ['Indentation', 'Key Spacing', 'No Unused Vars']
         }  
     }
 
@@ -16,14 +18,16 @@ export default class RuleLibrary extends Component {
             this.findSelected();
         });
         this.toggleDisplay();
-    };
+    }
 
     findSelected = () => {
-        let newSelect = this.props.catergories.find( category => {
+        let newSelect = this.props.categories.find( category => {
             return category.name === this.state.currentCategory
         });
         console.log(newSelect)
-        this.setState({selectedCategory: newSelect})
+        this.setState({selectedCategory: newSelect,
+                        
+                     });
     };
 
     toggleDisplay = () => {
@@ -33,14 +37,18 @@ export default class RuleLibrary extends Component {
   render() {
       console.log(this.state.currentCategory)
     return (
-      <div>
-        <h2 onClick={this.getCurrent}>Indentation</h2>
-        <h2 onClick={this.getCurrent}>Key Spacing</h2>
-        <h2 onClick={this.getCurrent}>No Unused Vars</h2>
+      <div className='rules'>
         {
-            this.state.isDisplayed ? 
-            (<CategoryDescription selectedCat={this.state.selectedCategory}/>)
-             : (null)
+          this.state.definitionNames.map(names => {
+              return (
+                <h2 className='rule' onClick={this.getCurrent}>{names}</h2>
+              )
+          })
+        }
+        { this.state.isDisplayed && 
+            <CategoryDescription selectedCat={this.state.selectedCategory}
+                                 toggle={this.toggleDisplay}
+            />
         }
       </div>
     )

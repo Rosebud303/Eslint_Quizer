@@ -1,14 +1,14 @@
 const categories = [
     {
         "name": "Indentation",
-        "description": "When refering to 'Identation' in esLint this means we are talking about the stylistic way your code should look in the developer. Indentation makes your code more readable and is the first step into writing less spaghetti code. It also gives the reader visual ques for hierarchy and scoping.",
+        "description": "When refering to 'Indentation' in esLint this means we are talking about the stylistic way your code should look in the developer. Indentation makes your code more readable and is the first step into writing less spaghetti code. It also gives the reader visual ques for hierarchy and scoping.",
         "incorrectImg": "./images/incorrectIndent.png",
         "correctImg": "./images/correctIndent.png",
         "url": "https://eslint.org/docs/rules/indent"
     },
     {
         "name": "Key Spacing",
-        "description": "When refering to 'Keyword/Function Spacing' in esLint we are talking about the structural style of a line of code. Spacing much like Identation helps you create more readable code. Spacing after declaration of a key word or function allows the compiler to understand what kind of code you are writing. It can also determine if a piece of code you wrote works as well.",
+        "description": "When refering to 'Keyword/Function Spacing' in esLint we are talking about the structural style of a line of code. Spacing much like Indentation helps you create more readable code. Spacing after declaration of a key word or function allows the compiler to understand what kind of code you are writing. It can also determine if a piece of code you wrote works as well.",
         "incorrectImg": "./images/incorrectSpace.png",
         "correctImg": "./images/correctSpace.png",
         "url": "https://eslint.org/docs/rules/key-spacing"
@@ -24,13 +24,13 @@ const categories = [
 
 const quizQuestions = [
     {
-        "name": "Identation",
+        "name": "Indentation",
         "quiz": "images/quiz1.png",
         "answer": "images/answer1.png",
         "id": 1
     },
     {
-        "name": "Identation",
+        "name": "Indentation",
         "quiz": "images/quiz3.png",
         "answer": "images/answer3.png",
         "id": 2
@@ -48,7 +48,7 @@ const quizQuestions = [
         "id": 4
     },
     {
-        "name": "Identation",
+        "name": "Indentation",
         "quiz": "images/quiz2.png",
         "answer": "images/answer2.png",
         "id": 5
@@ -60,7 +60,7 @@ const quizQuestions = [
         "id": 6
     },
     {
-        "name": "Identation",
+        "name": "Indentation",
         "quiz": "images/quiz6.png",
         "answer": "images/answer6.png",
         "id": 7
@@ -78,7 +78,7 @@ const quizQuestions = [
         "id": 9
     },
     {
-        "name": "Identation",
+        "name": "Indentation",
         "quiz": "images/quiz10.png",
         "answer": "images/answer10.png",
         "id": 10
@@ -90,7 +90,7 @@ const quizQuestions = [
         "id": 11
     },
     {
-        "name": "Identation",
+        "name": "Indentation",
         "quiz": "images/quiz9.png",
         "answer": "images/answer9.png",
         "id": 12
@@ -102,7 +102,7 @@ const quizQuestions = [
         "id": 13
     },
     {
-        "name": "Identation",
+        "name": "Indentation",
         "quiz": "images/quiz8.png",
         "answer": "images/answer8.png",
         "id": 14
@@ -126,19 +126,19 @@ const quizQuestions = [
         "id": 17
     },
     {
-        "name": "Identation",
+        "name": "Indentation",
         "quiz": "images/quiz4.png",
         "answer": "images/answer4.png",
         "id": 18
     },
     {
-        "name": "Identation",
+        "name": "Indentation",
         "quiz": "images/quiz5.png",
         "answer": "images/answer5.png",
         "id": 19
     },
     {
-        "name": "Identation",
+        "name": "Indentation",
         "quiz": "images/quiz7.png",
         "answer": "images/answer7.png",
         "id": 20
