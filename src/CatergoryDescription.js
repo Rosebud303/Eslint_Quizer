@@ -7,10 +7,13 @@ export default class CatergoryDescription extends Component {
     }
     
   render() {
+    const { name, description, url, correctImg, incorrectImg} = this.props.selectedCat
     return (
       <div>
-        <h3>{this.props.selectedCat.name}</h3>
-        <p>{this.props.selectedCat.description}</p>
+        <h3>{name}</h3>
+        <p>{description}</p>
+        <a href={url}>{url}</a>
+        <img src={require(incorrectImg)}/>
       </div>
     )
   }
