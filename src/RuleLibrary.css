@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-around;
     align-content: center;
-    height: 400px;
 }
 
 .rule:hover {
