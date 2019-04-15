@@ -3,46 +3,45 @@ import CategoryDescription from './CategoryDescription.js';
 import './RuleLibrary.css'
 
 export default class RuleLibrary extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isDisplayed: false,
-            selectedCategory: {},
-            currentCategory: '',
-            definitionNames: ['Indentation', 'Key Spacing', 'No Unused Vars']
-        }  
-    }
+  constructor(props) {
+      super(props);
+      this.state = {
+          isDisplayed: false,
+          selectedCategory: {},
+          currentCategory: ''
+      }  
+  }
 
-    getCurrent = (e) => {
-        this.setState({currentCategory: e.target.innerText}, () => {
-            this.findSelected();
-        });
-        this.toggleDisplay();
-    }
+  getCurrent = (e) => {
+      this.setState({currentCategory: e.target.innerText}, () => {
+          this.findSelected();
+      });
+      this.toggleDisplay();
+  }
 
-    findSelected = () => {
-        let newSelect = this.props.categories.find( category => {
-            return category.name === this.state.currentCategory
-        });
-        console.log(newSelect)
-        this.setState({selectedCategory: newSelect,
-                        
-                     });
-    };
+  findSelected = () => {
+      let newSelect = this.props.categories.find( category => {
+          return category.name === this.state.currentCategory
+      });
+      this.setState({selectedCategory: newSelect});
+  };
 
-    toggleDisplay = () => {
-        this.setState({isDisplayed: !this.state.isDisplayed})
-    };
+  toggleDisplay = () => {
+      this.setState({isDisplayed: !this.state.isDisplayed})
+  };
     
   render() {
-      console.log(this.state.currentCategory)
     return (
       <div className='rules'>
         {
-          this.state.definitionNames.map(names => {
+          this.props.categories.map(category => {
               return (
-                <h2 className='rule' onClick={this.getCurrent}>{names}</h2>
-              )
+                <h2 key={category.name} 
+                    className='rule' 
+                    onClick={this.getCurrent}>
+                    {category.name}
+                </h2>
+              );
           })
         }
         { this.state.isDisplayed && 
@@ -52,5 +51,5 @@ export default class RuleLibrary extends Component {
         }
       </div>
     )
-  }
-}
+  };
+};
