@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuizContainer Should match the snapshot 1`] = `
+<div
+  className="quiz-container"
+>
+  <div>
+    <h2>
+      Instrutions
+    </h2>
+    <br />
+    <p>
+      You will now be starting the quiz
+    </p>
+    <br />
+    <ul>
+      NOTE!
+      <li>
+        You will have to choose which rule is being violated
+      </li>
+      <li>
+        You will have three buttons to make your choice
+      </li>
+      <li>
+        You cannot go back
+      </li>
+      <li>
+        Your score will display at the end of the quiz
+      </li>
+      <li>
+        You may use notes..BUT TRY NOT TO!
+      </li>
+      <li>
+        HAVE FUN!
+      </li>
+    </ul>
+    <button
+      className="show-question-button"
+      onClick={[Function]}
+    >
+      GOT IT!
+    </button>
+  </div>
+</div>
+`;

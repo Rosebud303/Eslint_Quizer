@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RuleLibrary Should match the snapshot 1`] = `
+<div
+  className="rules"
+>
+  <h2
+    className="rule"
+    key="Indentation"
+    onClick={[Function]}
+  >
+    Indentation
+  </h2>
+  <h2
+    className="rule"
+    key="Key Spacing"
+    onClick={[Function]}
+  >
+    Key Spacing
+  </h2>
+</div>
+`;

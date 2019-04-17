@@ -27,7 +27,7 @@ export default class RuleLibrary extends Component {
   };
 
   toggleDisplay = () => {
-      this.setState({isDisplayed: !this.state.isDisplayed})
+      this.setState({isDisplayed: !this.state.isDisplayed});
   };
     
   render() {

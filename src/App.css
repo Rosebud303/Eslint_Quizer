@@ -1,9 +1,22 @@
 h1 {
-    height: 200px;
+    height: 130px;
     text-align: center;
     padding-top: 40px;
 }
 
 body {
     background: #9b4dbb;
+}
+
+.score {
+    text-align: center;
+}
+
+.button-area {
+    display: flex;
+    justify-content: center;
+}
+
+.startQuiz, .show-wrong{
+    margin: 0;
 }

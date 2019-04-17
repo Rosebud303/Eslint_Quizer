@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import './Quiz.css'
 
 export default function Quiz(prop) {
   return (
     <div>
-      <h1>{prop.current.name}</h1>
-      <h2>{prop.current.id}</h2>
+      <h2 className='quiz-title'>Choose a rule!</h2>
+      <img className='quiz-image' src={prop.current.quiz}/>
     </div>
   )
 }
