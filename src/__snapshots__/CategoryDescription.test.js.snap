@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryDescription Should match the snapshot 1`] = `
+<div
+  className="description-card"
+>
+  <h3
+    className="card-name"
+  >
+    Indentation
+  </h3>
+  <p
+    className="card-description"
+  >
+    When refering to 'Indentation' in esLint this means we are talking about the stylistic way your code should look in the developer. Indentation makes your code more readable and is the first step into writing less spaghetti code. It also gives the reader visual ques for hierarchy and scoping.
+  </p>
+  <p>
+    This is how not to do it:
+  </p>
+  <img
+    className="category-image"
+    src="https://i.imgur.com/oR17Hke.png"
+  />
+  <p>
+    This is the proper way to do it:
+  </p>
+  <img
+    className="category-image"
+    src="https://i.imgur.com/YIp5OaH.png"
+  />
+  <p>
+    Link for more info:
+  </p>
+  <a
+    href="https://eslint.org/docs/rules/indent"
+  >
+    https://eslint.org/docs/rules/indent
+  </a>
+  <button
+    className="return-button"
+    onClick={[MockFunction]}
+  >
+    Finished
+  </button>
+</div>
+`;

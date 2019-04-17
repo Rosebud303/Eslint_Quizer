@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WrongContainer Should match the snapshot 1`] = `
+<div
+  className="wrong-container"
+>
+  <h2>
+    Missed items...
+  </h2>
+  <WrongItem
+    answer="https://i.imgur.com/pJN3TaQ.png"
+    id={2}
+    name="Indentation"
+    quiz="https://i.imgur.com/0pEnCe4.png"
+  />
+  <WrongItem
+    answer="https://i.imgur.com/gcQ23xw.png"
+    id={4}
+    name="Key Spacing"
+    quiz="https://i.imgur.com/6F1XUXC.png"
+  />
+  <button
+    className="show-wrong-button"
+    onClick={[MockFunction]}
+  >
+    Finished
+  </button>
+</div>
+`;

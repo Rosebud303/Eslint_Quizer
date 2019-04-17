@@ -1,0 +1,11 @@
+.quiz-image {
+    width: 100%;
+    background: #282a22;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.quiz-title {
+    text-align: center;
+}
